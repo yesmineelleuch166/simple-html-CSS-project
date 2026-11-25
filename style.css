@@ -115,3 +115,70 @@
     opacity: 1;
 
 }
+/* Bouton pour changer le thème */
+#darkModeBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Thème sombre */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Bouton en mode sombre */
+body.dark-mode #darkModeBtn {
+    background-color: white;
+    color: black;
+}
+/* Transition douce entre les thèmes */
+.main_box,
+.sidebar_menu {
+    transition: background-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Mode clair */
+body.light-mode .main_box {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.65),
+        rgba(255, 255, 255, 0.65)
+    ), url("photo.jpg");
+}
+
+body.light-mode .sidebar_menu {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 8px #aaa;
+}
+
+body.light-mode .sidebar_menu a,
+body.light-mode .sidebar_menu i {
+    color: #222;
+}
+
+/* Mode sombre */
+body.dark-mode .main_box {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
+    ), url("photo.jpg");
+}
+
+body.dark-mode .sidebar_menu {
+    background-color: rgba(15, 15, 15, 0.95);
+    box-shadow: 0 0 8px #555;
+}
+
+body.dark-mode .sidebar_menu a,
+body.dark-mode .sidebar_menu i {
+    color: white;
+}
