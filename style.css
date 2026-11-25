@@ -120,13 +120,21 @@
     position: fixed;
     top: 20px;
     right: 20px;
-    padding: 12px 18px;
-    background-color: #333;
+    padding: 12px 25px;
+    background-color: #8e44ad;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
     z-index: 1000;
+    transition: 0.3s;
+}
+
+#darkModeBtn:hover {
+    background-color: #6c3483;
+    transform: scale(1.05);
 }
 
 /* Thème sombre */
