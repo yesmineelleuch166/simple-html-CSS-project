@@ -210,3 +210,10 @@ body.dark-mode .sidebar_menu i {
     text-align: center;
     margin-top: 8px;
 }
+/* Comment section */
+.comment {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+}
