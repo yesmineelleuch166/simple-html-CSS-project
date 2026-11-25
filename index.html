@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Project</title>
+    <title>capture-moments - Imen1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,7 +30,11 @@
       <div class="sidebar_menu">
         <div class="logo">
           <a href="#">Capture Moments</a>
+          <p class="site-description">Every picture tells a story.</p>
         </div>
+        <p class="comment">
+    Welcome to Capture Moments!
+</p>
 
         <div class="btn_two">
           <label for="check" >
@@ -56,6 +60,7 @@
               <i class="fa-solid fa-calendar-days"></i>
               <a href="#">Events</a>
             </li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li>
               <i class="fa-solid fa-store"></i>
               <a href="#">Store</a>
@@ -81,6 +86,29 @@
         </div>
       </div>
     </div>
+    <button id="darkModeBtn" type="button">
+    🌙 Dark Mode
+</button>
+
+<script>
+    const darkModeBtn = document.getElementById("darkModeBtn");
+
+    document.body.classList.add("dark-mode");
+
+    darkModeBtn.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+        document.body.classList.toggle("light-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            darkModeBtn.textContent = "☀️ Light Mode";
+        } else {
+            darkModeBtn.textContent = "🌙 Dark Mode";
+        }
+    });
+</script>
+<footer class="footer">
+    <p>© 2026 Capture Moments. All rights reserved.</p>
+</footer>
     <section id="services" class="services-section">
     <h2>Our Photography Services</h2>
 
