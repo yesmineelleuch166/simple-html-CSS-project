@@ -126,8 +126,7 @@
     opacity: 1;
 }
 
-/* Bouton Dark Mode */
-
+/* Bouton pour changer le thème */
 #darkModeBtn {
     position: fixed;
     top: 20px;
@@ -150,19 +149,18 @@
 }
 
 /* Thème sombre */
-
 body.dark-mode {
     background-color: #121212;
     color: white;
 }
 
+/* Bouton en mode sombre */
 body.dark-mode #darkModeBtn {
     background-color: white;
     color: black;
 }
 
 /* Transition douce entre les thèmes */
-
 .main_box,
 .sidebar_menu {
     transition: background-color 0.3s ease,
@@ -170,7 +168,6 @@ body.dark-mode #darkModeBtn {
 }
 
 /* Mode clair */
-
 body.light-mode .main_box {
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.65),
@@ -189,7 +186,6 @@ body.light-mode .sidebar_menu i {
 }
 
 /* Mode sombre */
-
 body.dark-mode .main_box {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.55),
@@ -208,7 +204,6 @@ body.dark-mode .sidebar_menu i {
 }
 
 /* Description du site */
-
 .site-description {
     color: gray;
     font-size: 12px;
